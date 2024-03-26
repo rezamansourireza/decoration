@@ -13,6 +13,10 @@
     text-align: right;
 }
 
+body{
+    background: url(/main/image/vp1.jpg) repeat;
+}
+
 /* -------=============== ScrollBar start =============--------- */
 ::-webkit-scrollbar {
     width: 5px !important;
@@ -32,29 +36,37 @@
 
 /* -------=============== ScrollBar   end =============--------- */
 
-nav .brand-logo{
+nav ul li a:hover{
+    background: transparent;
+}
+
+.nav_container{
+    filter: drop-shadow(0 0 3px black);
+}
+
+nav .brand-logo {
     width: 65px;
     top: 0.5rem;
 }
 
-nav .brand-logo img{
+nav .brand-logo img {
     width: 100%;
     filter: drop-shadow(0 0 1px white);
     transition: all 200ms ease;
 }
 
-nav .brand-logo img:hover{
+nav .brand-logo img:hover {
     filter: drop-shadow(0 0 5px #f8bbd0);
     transition: all 200ms ease;
 }
 
-@media (min-width:992px){
-    nav .brand-logo{
+@media (min-width:992px) {
+    nav .brand-logo {
         right: 5px !important;
     }
 }
 
-.navbar_ul{
+.navbar_ul {
     display: flex;
     position: relative;
     right: 75px !important;
@@ -89,6 +101,41 @@ nav .brand-logo img:hover{
     border-radius: 10%;
 }
 
-nav .sidenav-trigger{
+nav .sidenav-trigger {
     float: right !important;
 }
+
+#mobile-demo {
+    background: linear-gradient(180deg, rgba(149,43,223,0.5717260537027311) 23%, rgba(232,33,231,0.5913338968399859) 56%, rgba(63,0,84,0.5437148492209384) 82%),
+        url(/main/image/bgd.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mobile-demo li {
+    width: 100%;
+}
+
+#mobile-demo li a {
+    text-align: center;
+    color: white;
+    transition: all ease 100ms;
+}
+
+#mobile-demo li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    backdrop-filter: blur(1px);
+}
+
+#nav_svg{
+    position: fixed;
+    top: 32px;
+    pointer-events: none;
+}
+
