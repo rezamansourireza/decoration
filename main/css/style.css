@@ -13,8 +13,8 @@
     text-align: right;
 }
 
-body{
-    background: url(/main/image/vp1.jpg) repeat;
+body {
+    background: url(/main/image/images/body_back3.jpg) repeat;
 }
 
 /* -------=============== ScrollBar start =============--------- */
@@ -36,11 +36,11 @@ body{
 
 /* -------=============== ScrollBar   end =============--------- */
 
-nav ul li a:hover{
+nav ul li a:hover {
     background: transparent;
 }
 
-.nav_container{
+.nav_container {
     filter: drop-shadow(0 0 3px black);
 }
 
@@ -58,12 +58,6 @@ nav .brand-logo img {
 nav .brand-logo img:hover {
     filter: drop-shadow(0 0 5px #f8bbd0);
     transition: all 200ms ease;
-}
-
-@media (min-width:992px) {
-    nav .brand-logo {
-        right: 5px !important;
-    }
 }
 
 .navbar_ul {
@@ -106,7 +100,7 @@ nav .sidenav-trigger {
 }
 
 #mobile-demo {
-    background: linear-gradient(180deg, rgba(149,43,223,0.5717260537027311) 23%, rgba(232,33,231,0.5913338968399859) 56%, rgba(63,0,84,0.5437148492209384) 82%),
+    background: linear-gradient(180deg, rgba(149, 43, 223, 0.5717260537027311) 23%, rgba(232, 33, 231, 0.5913338968399859) 56%, rgba(63, 0, 84, 0.5437148492209384) 82%),
         url(/main/image/bgd.jpg);
     background-size: cover;
     background-position: center;
@@ -133,9 +127,33 @@ nav .sidenav-trigger {
     backdrop-filter: blur(1px);
 }
 
-#nav_svg{
+#nav_svg {
     position: fixed;
     top: 32px;
     pointer-events: none;
 }
 
+.top_carousel {
+    height: calc(100vh - 64px) !important;
+}
+
+.top_carousel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_carousel a img {
+    min-height: 100% !important;
+    width: unset !important;
+    height: unset !important;
+    min-width: 100% !important;
+}
+
+
+@media (min-width:992px) {
+    nav .brand-logo {
+        right: 5px !important;
+    }
+}
