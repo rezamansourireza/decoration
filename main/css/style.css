@@ -101,7 +101,7 @@ nav .sidenav-trigger {
 
 #mobile-demo {
     background: linear-gradient(180deg, rgba(149, 43, 223, 0.5717260537027311) 23%, rgba(232, 33, 231, 0.5913338968399859) 56%, rgba(63, 0, 84, 0.5437148492209384) 82%),
-        url(/main/image/bgd.jpg);
+        url(/main/image/images/sideBack.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -151,6 +151,36 @@ nav .sidenav-trigger {
     min-width: 100% !important;
 }
 
+.top_text {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background: #fce4ec;
+    color: #4a148c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 px black;
+    font-size: 1.5rem;
+    transition: all ease 230ms;
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    filter: blur(1px);
+    opacity: 0.6;
+}
+
+.top_text.isShow {
+    transform: perspective(800px) rotateY(-15deg) translateY(-10deg) scale(1) rotateX(10deg);
+    filter: blur(0);
+    opacity: 1;
+}
+
+
+@media (max-width:600px) {
+    .top_carousel {
+        height: calc(100vh - 56px) !important;
+    }
+}
 
 @media (min-width:992px) {
     nav .brand-logo {
