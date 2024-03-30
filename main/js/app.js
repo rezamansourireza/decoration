@@ -21,4 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(function () {
         M.Carousel.getInstance(carouselElms[0]).next()
     }, 5000)
+
+    var elemsFloatingButton = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(elemsFloatingButton, {});
+    
 });
