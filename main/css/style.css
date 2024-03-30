@@ -307,6 +307,28 @@ nav .sidenav-trigger {
     color: #e1bee7 !important;
 }
 
+.page-footer {
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer .row {
+    margin: 0 !important;
+    -webkit-margin:0 !important;
+    -o-margin:0 !important;
+    -moz-margin:0 !important;
+}
+
+.mx_1 {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.page-footer .footer-copyright {
+    max-height: 50px !important;
+}
+
 @media (max-width:600px) {
     .top_carousel {
         height: calc(100vh - 56px) !important;
