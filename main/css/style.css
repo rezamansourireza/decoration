@@ -281,7 +281,31 @@ nav .sidenav-trigger {
     transform: scale(1);
 }
 
+.d_flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.my_4 {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+.mx_2 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.social_items_icon a {
+    transition: all linear 100ms;
+}
+
+.social_items_icon a:hover {
+    text-shadow: 0 0 8px black;
+    transform: scale(1.2);
+    color: #e1bee7 !important;
+}
 
 @media (max-width:600px) {
     .top_carousel {
