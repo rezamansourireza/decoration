@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let elems = document.querySelectorAll('.top_text');
             for (const item of elems) {
                 item.classList.remove('isShow');
-                setTimeout(function(){
+                setTimeout(function () {
                     item.classList.add('isShow')
                 }, 700)
             }
@@ -24,5 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var elemsFloatingButton = document.querySelectorAll('.fixed-action-btn');
     M.FloatingActionButton.init(elemsFloatingButton, {});
-    
+
+    var elems = document.querySelectorAll('select');
+    M.FormSelect.init(elems, {});
+
 });
