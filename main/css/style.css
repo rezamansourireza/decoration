@@ -153,6 +153,10 @@ nav .sidenav-trigger {
     margin-bottom: 8rem !important;
 }
 
+.mt_8 {
+    margin-top: 4rem !important;
+}
+
 .w_100 {
     width: 100% !important;
 }
@@ -297,6 +301,24 @@ nav .sidenav-trigger {
 
 .pagination li.active {
     background-color: #880e4f;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+.position_relative {
+    position: relative !important;
+}
+
+.px_1 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+.d_flex_between {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width:600px) {
