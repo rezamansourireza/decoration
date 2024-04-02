@@ -22,7 +22,7 @@
     right: 0;
 }
 
-.article_container .avatar_image{
+.article_container .avatar_image {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
@@ -62,5 +62,15 @@
 }
 
 .main_svg .shape-fill {
-fill: #ffffff;
+    fill: #ffffff;
+}
+
+#comments_container {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    text-align: center;
 }

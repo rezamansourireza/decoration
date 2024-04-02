@@ -168,9 +168,14 @@ nav .sidenav-trigger {
     justify-content: center;
 }
 
-.my_4 {
+.my_8 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
+}
+
+.my_10{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
 }
 
 .mx_2 {

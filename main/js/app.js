@@ -28,4 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('select');
     M.FormSelect.init(elems, {});
 
+    var textAreaElm = document.querySelectorAll('.materialize-textarea');
+    M.CharacterCounter.init(textAreaElm)
+
+    document.getElementById('confirm_comment').addEventListener('click', function () {
+        M.toast({
+            html: 'نظر شما با موفقیت ثبت شد!',
+            classes: 'pink leghten-3'
+        })
+    })
+
 });
