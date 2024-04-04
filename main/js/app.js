@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         edge: "right",
     });
 
-    var carouselElms = document.querySelectorAll('.carousel');
+    var carouselElms = document.querySelectorAll('.carousel.top_carousel');
     M.Carousel.init(carouselElms, {
         fullWidth: true,
         indicators: true,
@@ -18,6 +18,22 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
     });
+
+
+    var GalleryItem = document.querySelectorAll('.carousel.gallery_div');
+    M.Carousel.init(GalleryItem, {});
+
+    var simpleItem = document.querySelectorAll('.simple_item');
+    for (const item of simpleItem) {
+        item.addEventListener('click', function () {
+            document.getElementById('gallery_section').classList.add('active');
+        })
+    }
+
+    document.getElementById('close_gallery_section').addEventListener('click', function () {
+        document.getElementById('gallery_section').classList.remove('active');
+    })
+
     setInterval(function () {
         M.Carousel.getInstance(carouselElms[0]).next()
     }, 5000)
