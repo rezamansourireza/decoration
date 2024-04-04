@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(180deg, rgba(30, 16, 224, 0.4344711517419467) 23%, rgba(232, 33, 231, 0.5549193310136555) 55%, rgba(63, 0, 84, 0.3700453814338235) 82%),
+        url(/main/image/images/vp2.jpg)
+}
+
+.login_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0.5rem 2rem 0.5rem;
+}
+
+.login_section * {
+    color: white !important;
+}
+
+.login_section input:not(.browser-default) {
+    border-bottom: 1px solid white;
+}
+
+.login_content {
+    padding: 1rem !important;
+    background: #ffffff26;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.7);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button_box .btn{
+    background: rgba(255, 255, 255, 0.3);
+}

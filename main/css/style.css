@@ -326,6 +326,10 @@ nav .sidenav-trigger {
     justify-content: space-between;
 }
 
+.d_block{
+    display: block !important;
+}
+
 @media (max-width:600px) {
     .top_carousel {
         height: calc(100vh - 56px) !important;
