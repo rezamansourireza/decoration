@@ -218,12 +218,23 @@ nav .sidenav-trigger {
     margin-right: 1rem !important;
 }
 
-.simple_item {
+.simple_item,
+simple_article {
     height: 30vh;
     padding: 0.5rem;
 }
 
 .simple_item .image {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple_article .image {
     height: 100% !important;
     width: 100% !important;
     border-radius: 5px;
@@ -330,8 +341,8 @@ nav .sidenav-trigger {
     display: block !important;
 }
 
-.h_100{
-    height: 100vh;
+.h_100 {
+    height: 100%;
 }
 
 @media (max-width:600px) {
